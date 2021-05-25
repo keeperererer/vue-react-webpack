@@ -5,15 +5,16 @@
 
     <!-- <TplDemo /> -->
     <!-- <ConditionDemo/> -->
-    <!-- <EventDemo/> -->
+    <!-- <EventDemo /> -->
 
-    <!-- <ComponentDemo/> -->
+    <ComponentDemo />
 
     <!-- <AdvancedUse/> -->
 
     <!-- <CartDemo/> -->
     <!-- <computedDemo /> -->
-    <WatchDemo></WatchDemo>
+    <!-- <WatchDemo></WatchDemo> -->
+    <!-- <ListDemo></ListDemo> -->
   </div>
 </template>
 
@@ -24,25 +25,26 @@
 // import ConditionDemo from './components/BaseUse/ConditionDemo'
 // import EventDemo from './components/BaseUse/EventDemo'
 
-// import ComponentDemo from './components/ComponentsDemo/index'
+import ComponentDemo from './components/ComponentsDemo/index'
 
 // import AdvancedUse from './components/AdvancedUse/index'
 
 // import CartDemo from './components/Cart/index'
 // import computedDemo from './components/BaseUse/ComputedDemo'
-import WatchDemo from './components/BaseUse/WatchDemo'
-
+// import WatchDemo from './components/BaseUse/WatchDemo'
+// import ListDemo from './components/BaseUse/ListDemo'
 export default {
   name: 'app',
   components: {
     // HelloWorld
-    // EventDemo
-    // ComponentDemo
+    // EventDemo,
+    ComponentDemo,
     // AdvancedUse
     // CartDemo
     // TplDemo,
     // computedDemo,
-    WatchDemo
+    // WatchDemo,
+    // ListDemo,
   },
 }
 </script>

@@ -15,12 +15,11 @@ export default {
     },
     methods: {
         increment1(event) {
-            // eslint-disable-next-line
-            console.log('event', event, event.__proto__.constructor) // 是原生的 event 对象
-            // eslint-disable-next-line
+            console.log('event', event, event.__proto__.constructor) 
+            // 是原生的 event 对象
             console.log(event.target)
-            // eslint-disable-next-line
-            console.log(event.currentTarget) // 注意，事件是被注册到当前元素的，和 React 不一样
+            console.log(event.currentTarget) 
+            // 注意，事件是被注册到当前元素的，和 React 不一样
             this.num++
 
             // 1. event 是原生的
@@ -28,7 +27,6 @@ export default {
             // 和 DOM 事件一样
         },
         increment2(val, event) {
-            // eslint-disable-next-line
             console.log(event.target)
             this.num = this.num + val
         },

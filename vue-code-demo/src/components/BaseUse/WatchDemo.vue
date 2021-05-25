@@ -9,21 +9,22 @@
 export default {
     data() {
         return {
-            name: '双越',
+            name: '1',
             info: {
-                city: '北京'
+                city: '2'
             }
         }
     },
     watch: {
-        name(oldVal, val) {
+        name(val, oldVal) {
             // eslint-disable-next-line
-            console.log('watch name', oldVal, val) // 值类型，可正常拿到 oldVal 和 val
+            console.log('watch name', val, oldVal) // 值类型，可正常拿到 val 和 oldVal
         },
         info: {
-            handler(oldVal, val) {
+            handler(val, oldVal) {
                 // eslint-disable-next-line
-                console.log('watch info', oldVal, val) // 引用类型，拿不到 oldVal 。因为指针相同，此时已经指向了新的 val
+                console.log('watch info', val, oldVal) 
+                // 引用类型，拿不到 oldVal 。因为指针相同，此时已经指向了新的 val
             },
             deep: true // 深度监听
         }
