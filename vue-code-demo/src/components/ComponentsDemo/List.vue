@@ -50,7 +50,7 @@ export default {
   },
   updated() {
     console.log('list updated')
-  }, 
+  },
   beforeDestroy() {
     // 及时销毁，否则可能造成内存泄露
     event.$off('onAddTitle', this.addTitleHandler)
