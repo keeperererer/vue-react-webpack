@@ -28,10 +28,10 @@
         <button @click="showFormDemo = true">show form demo</button> -->
 
         <!-- keep-alive -->
-        <KeepAlive/>
+        <!-- <KeepAlive/> -->
 
         <!-- mixin -->
-        <!-- <MixinDemo/> -->
+        <MixinDemo/>
     </div>
 </template>
 
@@ -40,8 +40,8 @@
 // import NextTick from './NextTick'
 // import SlotDemo from './SlotDemo'
 // import ScopedSlotDemo from './ScopedSlotDemo'
-import KeepAlive from './KeepAlive'
-// import MixinDemo from './MixinDemo'
+// import KeepAlive from './KeepAlive'
+import MixinDemo from './MixinDemo'
 
 export default {
     components: {
@@ -50,8 +50,8 @@ export default {
         // SlotDemo,
         // ScopedSlotDemo,
         // FormDemo: () => import('../BaseUse/FormDemo'),
-        KeepAlive
-        // MixinDemo
+        // KeepAlive
+        MixinDemo
     },
     data() {
         return {
